@@ -73,7 +73,7 @@ function predictWebcam() {
     let probability = (predictions[0].probability*100);
     if (probability > 40) {
       //predElem.innerText = `Parece que estou a reconhecer uma ${className}!`;
-      predElem.innerText = `Parece que estou a reconhecer: ${className} (com probabilidade de ${probability.toFixed(0)}%`;
+      predElem.innerText = `Parece que estou a reconhecer: ${className}, com probabilidade de ${probability.toFixed(0)}%`;
     } else {
         predElem.innerText = `Lamento, mas não estou a reconhecer nenhum objeto...`;
         //predElem.innerText = `talvez uma : ${className}, with ${probability.toFixed(0)}% probability`;
